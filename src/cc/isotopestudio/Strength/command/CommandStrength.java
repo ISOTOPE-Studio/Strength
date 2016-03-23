@@ -19,10 +19,19 @@ public class CommandStrength implements CommandExecutor {
 			}
 			Player player = (Player) sender;
 			if (args.length > 0 && !args[0].equalsIgnoreCase("help")) {
-
+				return true;
 			} else {
-
+				player.sendMessage(
+						new StringBuilder(Strength.prefix).append(ChatColor.GREEN).append("帮助菜单").toString());
+				sender.sendMessage(
+						new StringBuilder().append(ChatColor.GREEN).append("/renwu accept 开始每日任务").toString());
+				sender.sendMessage(
+						new StringBuilder().append(ChatColor.GREEN).append("/renwu info 查看你的任务信息").toString());
+				sender.sendMessage(
+						new StringBuilder().append(ChatColor.GREEN).append("/renwu today 查看今日任务信息").toString());
+				return true;
 			}
 		}
+		return false;
 	}
 }
