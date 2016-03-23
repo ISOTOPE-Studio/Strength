@@ -1,0 +1,12 @@
+name: Strength
+main: cc.isotopestudio.Strength.Strength
+
+author: Mars
+description: Strength
+website: http://isotopestudio.cc
+version: 1.0.0
+commands:
+  Strength:
+    description: Strength Command.
+    usage: /<command>
+    aliases: tizhi
